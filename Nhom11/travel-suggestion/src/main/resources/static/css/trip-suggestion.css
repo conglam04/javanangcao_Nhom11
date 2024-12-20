@@ -1,0 +1,108 @@
+@charset "UTF-8";
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ff7e5f;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+form label {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+form input {
+    padding: 10px;
+    width: 70%;
+    margin: 10px 0;
+    border: 2px solid #ff7e5f;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 10px 20px;
+    background: #ff7e5f;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #e95d3c;
+}
+
+#trip-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.trip-card {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.trip-card h2 {
+    font-size: 1.5rem;
+    color: #ff7e5f;
+    margin-bottom: 10px;
+}
+
+.trip-card p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.trip-card .total-cost {
+    font-weight: bold;
+    color: #333;
+}
+
+.btn-view-details {
+    display: block;
+    padding: 8px;
+    width: 100%;
+    background: #ff7e5f;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.btn-view-details:hover {
+    background: #e95d3c;
+}

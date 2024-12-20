@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Danh sách điểm đến</title>
+</head>
+<body>
+    <h1>Danh sách điểm đến</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Tên</th>
+                <th>Mô tả</th>
+                <th>Địa điểm</th>
+                <th>Giá</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Lặp qua danh sách destinations -->
+            <tr th:each="destination : ${destinations}">
+                <td th:text="${destination.id}"></td>
+                <td th:text="${destination.name}"></td>
+                <td th:text="${destination.description}"></td>
+                <td th:text="${destination.location}"></td>
+                <td th:text="${destination.price}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
